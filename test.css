@@ -1,0 +1,51 @@
+/* パソコンではタイル型で表示 */
+.news-slider {
+  background-color: #ccc;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1080px;
+  width: 100%;
+}
+.slide-box {
+  height: auto;
+  margin-right: 1%;
+  width: 24%;
+}
+/* サムネイルとタイトルのスタイル調整 */
+.slide-box a {
+  background-color: #fff;
+  color: #222;
+  display: block;
+  text-decoration: none;
+}
+.slide-box img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.slide-box p {
+  font-weight: bold;
+  padding: 10px;
+}
+@media screen and (max-width: 479px) {
+/* スマホではスライダーで表示 */
+  .news-slider {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  .slide-box {
+    flex: 0 0 70%;
+  }
+}
+
+
+
+/* body {
+  height: 300px;
+  margin: 5px;
+} */
+
+/* いいねボタン */
+.onoff-btn {
+   width: 30px;
+}
